@@ -51,8 +51,14 @@ a {
 .just-sp-bw {
     justify-content: space-between;
 }
+.just-end {
+    justify-content: end;
+}
 .align-ctr {
     align-items: center;
+}
+.align-end {
+    align-items: flex-end;
 }
 
 .clearfix::after {

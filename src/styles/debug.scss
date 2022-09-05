@@ -1,0 +1,107 @@
+.debug {
+    header {
+        .topbar > div,
+        .logo-main,
+        .menu-main {
+            background-color: yellow;
+            border: 1px solid black;
+            height: 50px;
+        }
+    }
+
+    main {
+        section {
+            .hero {
+                background-color: orange;
+                border: 1px solid black;
+                height: 300px;
+            }
+        }
+
+        section {
+            .about {
+                background-color: aqua;
+                border: 1px solid black;
+                height: 300px;
+            }
+            .about-card {
+                background-color: aqua;
+                border: 1px solid black;
+                height: 150px;
+            }
+        }
+
+        section {
+            .services {
+                background-color: red;
+                border: 1px solid black;
+                height: 100px;
+            }
+            .services-card {
+                background-color: red;
+                border: 1px solid black;
+                height: 150px;
+            }
+        }
+
+        section {
+            .process {
+                background-color: greenyellow;
+                border: 1px solid black;
+                height: 100px;
+            }
+            .process-card {
+                background-color: greenyellow;
+                border: 1px solid black;
+                height: 150px;
+            }
+        }
+
+        section {
+            .team {
+                background-color: plum;
+                border: 1px solid black;
+                height: 150px;
+            }
+            .team-card {
+                background-color: plum;
+                border: 1px solid black;
+                height: 100px;
+            }
+        }
+
+        section {
+            .blog {
+                background-color: red;
+                border: 1px solid black;
+                height: 100px;
+            }
+            .blog-card {
+                background-color: red;
+                border: 1px solid black;
+                height: 150px;
+            }
+        }
+
+        section {
+            .contact {
+                background-color: aqua;
+                border: 1px solid black;
+                height: 250px;
+            }
+        }
+    }
+
+    footer {
+        .bottombar > div {
+            background-color: yellow;
+            border: 1px solid black;
+            height: 100px;
+        }
+        .credits {
+            background-color: yellow;
+            border: 1px solid black;
+            height: 50px;
+        }
+    }
+}
