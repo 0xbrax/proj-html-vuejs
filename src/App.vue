@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="debug" id="app">
+    <MyTopbar />
+    <MyMain />
+    <MyFooter />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyTopbar from '@/components/MyTopbar.vue'
+import MyMain from '@/components/MyMain.vue'
+import MyFooter from '@/components/MyFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MyTopbar,
+    MyMain,
+    MyFooter
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import '@/styles/vars.scss';
+@import '@/styles/debug.scss';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+@import '@/styles/general.scss';
+@import '@/styles/common.scss';
+
 </style>
