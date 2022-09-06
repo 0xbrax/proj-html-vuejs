@@ -30,7 +30,7 @@
         <nav class="container flex align-ctr txt-up">
             <div class="logo-main">
                 <div class="logo-txt">
-                    <a class="txt-space txt-bold" href="#">Nexgen</a>
+                    <a class="txt-space txt-bold" href="#"><span class="color-brand-dark">Nex</span><span class="color-black">gen</span></a>
                 </div>
             </div>
 
@@ -105,7 +105,7 @@ export default {
     }
 
     nav {
-        height: 60px;
+        height: 70px;
     }
 
     .logo-main {
@@ -116,15 +116,7 @@ export default {
         display: inline-block;
         padding: 10px 20px;
         border-radius: 20px;
-        background: linear-gradient(90deg, rgba(69, 186, 188, 0.3) 0%, rgba(69, 186, 188, 0.3) 50%, rgba(255,255,255,0) 50%);
-
-        a {
-            color: #048383 //linear-gradient(90deg, rgba(69, 186, 188, 0.5) 0%, rgba(69, 186, 188, 0.5) 50%, rgba(0, 0, 0, 1) 50%);
-        }
-
-        h1 {
-            font-size: 16px;
-        }
+        background: linear-gradient(90deg, rgba(69, 186, 188, 0.3) 0%, rgba(69, 186, 188, 0.3) 48%, rgba(255,255,255,0) 48%);
     }
 
     .menu-main {

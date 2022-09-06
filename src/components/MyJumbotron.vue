@@ -2,7 +2,7 @@
     <section>
         <div class="container flex just-end align-ctr">
             <div class="hero">
-                <div class="txt-up brand-col-dark">Fusions &amp; acquisitions</div>
+                <div class="txt-up txt-bold color-brand-dark">Fusions &amp; acquisitions</div>
                 <h1>Insurance consulting</h1>
 
                 <div class="flex wrap just-sp-bw">
