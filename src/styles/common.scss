@@ -22,11 +22,9 @@
 .mt-40 {
     margin-top: 40px;
 }
-
 .ml-20 {
     margin-left: 20px;
 }
-
 .py-120 {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -37,13 +35,16 @@
 .color-brand-dark {
     color: $brand-color-dark;
 }
+.color-brand-light {
+    color: $brand-color-light;
+}
 .color-black {
     color: $black-var;
 }
 
 .band-tag-back {
     display: inline-block;
-    background-color: rgba(4, 131, 131, 0.3);
+    background-color: rgba(4, 131, 131, 0.2);
     border-radius: 5px;
     padding: 5px 15px;
 }
@@ -52,6 +53,9 @@
 
 h2 {
     font-size: 40px;
+}
+.font-s30 {
+    font-size: 30px;
 }
 
 

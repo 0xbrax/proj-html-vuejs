@@ -116,7 +116,7 @@ export default {
         display: inline-block;
         padding: 10px 20px;
         border-radius: 20px;
-        background: linear-gradient(90deg, rgba(69, 186, 188, 0.3) 0%, rgba(69, 186, 188, 0.3) 48%, rgba(255,255,255,0) 48%);
+        background: linear-gradient(90deg, rgba(4, 131, 131, 0.2) 0%, rgba(4, 131, 131, 0.2) 48%, rgba(255,255,255,0) 48%);
     }
 
     .menu-main {
