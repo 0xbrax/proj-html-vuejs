@@ -16,15 +16,37 @@
 
 
 
+.mt-20 {
+    margin-top: 20px;
+}
+
 .ml-20 {
     margin-left: 20px;
 }
 
 
 
+.brand-col-dark {
+    color: $brand-color-dark;
+}
+
+
+
 .btn-main {
+    display: inline-block;
+    text-transform: uppercase;
+    border: 2px solid $brand-color-dark;
     border-radius: 5px;
     padding: 10px 20px;
     background-color: $brand-color-dark;
     color: $white;
+}
+.btn-sec {
+    display: inline-block;
+    text-transform: uppercase;
+    border: 2px solid $brand-color-dark;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: $white;
+    color: $brand-color-dark;
 }

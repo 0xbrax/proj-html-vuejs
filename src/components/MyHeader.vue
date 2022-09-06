@@ -10,17 +10,17 @@
                     <span>
                         <i class="fa-solid fa-phone"></i> +1 (305) 1234-5678
                     </span>
-                    <span>
+                    <span class="ml-20">
                         <i class="fa-solid fa-envelope"></i> hello@example.com
                     </span>
 
-                    <a href="#">
+                    <a class="ml-20" href="#">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="#">
+                    <a class="ml-20" href="#">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="#">
+                    <a class="ml-20" href="#">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -30,7 +30,7 @@
         <nav class="container flex align-ctr txt-up">
             <div class="logo-main">
                 <div class="logo-txt">
-                    <a class="txt-space" href="#"><h1>Nexgen</h1></a>
+                    <a class="txt-space txt-bold" href="#">Nexgen</a>
                 </div>
             </div>
 
