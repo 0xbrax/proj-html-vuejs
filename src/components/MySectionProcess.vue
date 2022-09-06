@@ -14,7 +14,7 @@
 
                 <div class="container flex wrap just-sp-bw">
                     <div class="process-card" v-for="(process, processIndex) in processCard" :key="processIndex">
-                    <span class="circle-num">{{process.number}}</span>
+                    <span class="circle-back">{{process.number}}</span>
                     <h4 class="mt-20">{{process.title}}</h4>
                     <p class="mt-20">{{process.overview}}</p>
                 </div>

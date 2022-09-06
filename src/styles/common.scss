@@ -85,7 +85,7 @@ h2 {
 
 
 
-.circle-num {
+.circle-back {
     display: inline-block;
     border-radius: 50%;
     background-color: #cde6e6;
@@ -95,4 +95,16 @@ h2 {
     text-align: center;
     font-weight: bold;
     line-height: 40px;
+}
+
+.circle-back-alt {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(4, 131, 131, 0.2);
+    color: $brand-color-dark;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
 }
