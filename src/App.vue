@@ -1,5 +1,5 @@
 <template>
-  <div class="debug" id="app">
+  <div id="app">
     <MyHeader />
     <MyMain />
     <MyFooter />

@@ -1,0 +1,30 @@
+.txt-r {
+    text-align: right;
+}
+
+.txt-bold {
+    font-weight: bold;
+}
+
+.txt-up {
+    text-transform: uppercase;
+}
+
+.txt-space {
+    letter-spacing: 6px;
+}
+
+
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+
+
+.btn-main {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: $brand-color-dark;
+    color: $white;
+}
