@@ -1,3 +1,7 @@
+.txt-ctr {
+    text-align: center;
+}
+
 .txt-r {
     text-align: right;
 }
@@ -77,4 +81,18 @@ h2 {
     padding: 10px 20px;
     background-color: $white;
     color: $brand-color-dark;
+}
+
+
+
+.circle-num {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #cde6e6;
+    color: $brand-color-dark;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
 }
