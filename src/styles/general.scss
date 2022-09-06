@@ -3,10 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Verdana, sans-serif;
 }
+
+section {
+    scroll-margin-top: 70px;
+}
+
+
 
 img {
     display: block;

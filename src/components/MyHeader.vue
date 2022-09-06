@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="topbar">
+        <div class="topbar font-s14" v-if="checkScroll == false">
             <div class="container flex just-sp-bw align-ctr">
                 <div class="topbar-l">
                     <i class="fa-solid fa-clock"></i> Open Hours: Mon - Sat / 9:00 - 18:00
@@ -27,18 +27,20 @@
             </div>
         </div>
 
-        <nav class="container flex align-ctr txt-up">
-            <div class="logo-main">
-                <div class="logo-txt">
-                    <a class="txt-space txt-bold" href="#"><span class="color-brand-dark">Nex</span><span class="color-black">gen</span></a>
+        <nav>
+            <div class="container flex align-ctr txt-up">
+                <div class="logo-main">
+                    <div class="logo-txt">
+                        <a class="txt-space txt-bold" href="#"><span class="color-brand-dark">Nex</span><span class="color-black">gen</span></a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="menu-main txt-r">
-                <ul>
-                    <li v-for="(link, linkIndex) in headerLink" :key="linkIndex" class="ml-20"><a :href="link.url">{{link.name}}</a></li>
-                    <li class="ml-20"><a class="btn-main" href="#">Get in touch</a></li>
-                </ul>
+                <div class="menu-main txt-r">
+                    <ul>
+                        <li v-for="(link, linkIndex) in headerLink" :key="linkIndex" class="ml-20"><a :href="link.url">{{link.name}}</a></li>
+                        <li class="ml-20"><a class="btn-main" href="#">Get in touch</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -47,6 +49,9 @@
 <script>
 export default {
     name: 'MyHeader',
+    props: {
+        checkScroll: Boolean
+    },
     data() {
         return {
             headerLink: [
@@ -55,23 +60,23 @@ export default {
                     name: 'Home'
                 },
                 {
-                    url: '#',
+                    url: '#about-id',
                     name: 'About'
                 },
                 {
-                    url: '#',
+                    url: '#services-id',
                     name: 'Services'
                 },
                 {
-                    url: '#',
+                    url: '#process-id',
                     name: 'Process'
                 },
                 {
-                    url: '#',
+                    url: '#team-id',
                     name: 'Team'
                 },
                 {
-                    url: '#',
+                    url: '#blog-id',
                     name: 'Blog'
                 }
             ]
@@ -82,6 +87,13 @@ export default {
 
 <style scoped lang="scss">
 @import '@/styles/vars.scss';
+
+    header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+    }
 
     .topbar {
         height: 40px;
@@ -106,6 +118,11 @@ export default {
 
     nav {
         height: 70px;
+        background-color: $white;
+
+        .container {
+            height: 100%;
+        }
     }
 
     .logo-main {

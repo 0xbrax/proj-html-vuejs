@@ -1,5 +1,5 @@
 <template>
-    <section class="py-120">
+    <section id="about-id" class="py-120">
         <div class="container flex just-sp-bw align-ctr">
             <div class="about">
                 <div class="color-brand-dark txt-up txt-bold">About the network</div>

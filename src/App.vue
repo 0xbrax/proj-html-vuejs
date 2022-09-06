@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MyHeader />
+    <MyHeader :checkScroll="isWindowScroll" />
     <MyMain />
     <MyFooter />
   </div>
@@ -17,6 +17,24 @@ export default {
     MyHeader,
     MyMain,
     MyFooter
+  },
+  data() {
+    return {
+      isWindowScroll: false
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll () {
+      if ((window.scrollY) == 0) {
+        //alert("you're at the bottom of the page");
+        this.isWindowScroll = false;
+      } else {
+        this.isWindowScroll = true;
+      }
+    }
   }
 }
 </script>
@@ -28,5 +46,4 @@ export default {
 
 @import '@/styles/general.scss';
 @import '@/styles/common.scss';
-
 </style>
