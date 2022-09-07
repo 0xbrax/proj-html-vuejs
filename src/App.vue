@@ -29,7 +29,6 @@ export default {
   methods: {
     handleScroll () {
       if ((window.scrollY) == 0) {
-        //alert("you're at the bottom of the page");
         this.isWindowScroll = false;
       } else {
         this.isWindowScroll = true;
