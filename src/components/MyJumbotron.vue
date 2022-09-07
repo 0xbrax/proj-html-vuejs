@@ -53,7 +53,8 @@ export default {
     select {
         width: 48%;
         padding: 10px;
-        background-color: $grey-light;
+        background-color: $white;
+        opacity: 0.7;
         border: 0;
         border-radius: 5px;
     }
