@@ -10,12 +10,13 @@
                     <input class="mt-20" type="text" placeholder="Email">
                     <input class="mt-20" type="text" placeholder="Phone">
                     <select class="mt-20">
+                        <option value="0">-- seleziona --</option>
                         <option value="1">More info</option>
                     </select>
                 </div>
 
                 <a class="btn-main mt-20" href="#">Get in touch</a>
-                <a class="btn-sec mt-20 ml-20" href="#">Read more</a>
+                <a class="btn-sec color-brand-dark mt-20 ml-20" href="#">Read more</a>
             </div>
         </div>
     </section>
@@ -53,8 +54,8 @@ export default {
     select {
         width: 48%;
         padding: 10px;
-        background-color: $white;
-        opacity: 0.7;
+        background-color: rgba(165, 160, 157, 0.3);
+        color: $black-var;
         border: 0;
         border-radius: 5px;
     }

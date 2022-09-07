@@ -37,8 +37,8 @@
 
                 <div class="menu-main txt-r">
                     <ul>
-                        <li v-for="(link, linkIndex) in headerLink" :key="linkIndex" class="ml-20"><a :href="link.url">{{link.name}}</a></li>
-                        <li class="ml-20"><a class="btn-main" href="#">Get in touch</a></li>
+                        <li v-for="(link, linkIndex) in headerLink" :key="linkIndex" class="ml-20"><a class="color-black" :href="link.url">{{link.name}}</a></li>
+                        <li class="ml-20"><a class="btn-main" href="#contact-id">Get in touch</a></li>
                     </ul>
                 </div>
             </div>
@@ -127,13 +127,6 @@ export default {
 
     .logo-main {
         width: 30%;
-    }
-
-    .logo-txt {
-        display: inline-block;
-        padding: 10px 20px;
-        border-radius: 20px;
-        background: linear-gradient(90deg, rgba(4, 131, 131, 0.2) 0%, rgba(4, 131, 131, 0.2) 48%, rgba(255,255,255,0) 48%);
     }
 
     .menu-main {

@@ -1,11 +1,11 @@
 <template>
-    <section class="py-120">
+    <section id="blog-id" class="py-120">
         <div class="container">
             <div class="flex just-sp-bw align-end">
                 <div class="blog">
                     <div class="color-brand-dark txt-up txt-bold">Our editorial content</div>
-                    <h2 class="mt-20"><span class="band-tag-back color-brand-dark">Lastest</span> News</h2>
-                    <p class="mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium laborum, mollitia ullam.</p>
+                    <h2 class="mt-20">Lastest <span class="band-tag-back color-brand-dark">News</span></h2>
+                    <p class="color-grey mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium laborum, mollitia ullam.</p>
                 </div>
                 <div>
                     <a class="btn-main" href="#">See all</a>

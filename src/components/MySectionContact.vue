@@ -1,11 +1,11 @@
 <template>
-    <section class="py-120">
-        <div class="container">
+    <section id="contact-id" class="py-120">
+        <div class="container-small">
             <div class="flex">
                 <div class="contact">
                     <div class="color-brand-dark txt-up txt-bold">Newsletter</div>
                     <h2 class="mt-20"><span class="band-tag-back">Know</span> First</h2>
-                    <p class="mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium laborum, mollitia ullam.</p>
+                    <p class="color-grey mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium laborum, mollitia ullam.</p>
                 </div>
 
                 <div class="contact">
@@ -40,8 +40,8 @@ export default {
     input{
         width: 100%;
         padding: 10px;
-        background-color: $white;
-        opacity: 0.7;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: $black-var;
         border: 0;
         border-radius: 5px;
     }

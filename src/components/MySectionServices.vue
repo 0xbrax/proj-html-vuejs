@@ -5,21 +5,21 @@
                 <div class="services">
                     <div class="color-brand-dark txt-up txt-bold">Our business areas</div>
                     <h2 class="mt-20">Excellence in <span class="band-tag-back color-brand-dark">Services</span></h2>
-                    <p class="mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium laborum, mollitia ullam, explicabo recusandae commodi iste id expedita aut sequi necessitatibus, adipisci tenetur porro ea consectetur?</p>
+                    <p class="color-grey mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium laborum, mollitia ullam, explicabo recusandae commodi iste id expedita aut sequi necessitatibus, adipisci tenetur porro ea consectetur?</p>
                 </div>
                 <div>
                     <a class="btn-main" href="#">See all</a>
                 </div>
             </div>
 
-            <div class="flex wrap just-sp-bw">
+            <div class="flex wrap just-sp-bw mt-20">
                 <div class="services-card mt-20">
                     <div class="flex just-sp-bw">
                         <i class="fa-solid fa-network-wired color-brand-dark font-s30"></i>
                         <i class="fa-solid fa-arrow-right color-brand-light"></i>
                     </div>
                     <h4 class="mt-20">Audit &amp; Assurance</h4>
-                    <p class="mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
 
                 <div class="services-card mt-20">
@@ -28,7 +28,7 @@
                         <i class="fa-solid fa-arrow-right color-brand-light"></i>
                     </div>
                     <h4 class="mt-20">Financial Advisory</h4>
-                    <p class="mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
 
                 <div class="services-card mt-20">
@@ -37,7 +37,7 @@
                         <i class="fa-solid fa-arrow-right color-brand-light"></i>
                     </div>
                     <h4 class="mt-20">Analytics and M&amp;A</h4>
-                    <p class="mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
 
                 <div class="services-card mt-20">
@@ -46,7 +46,7 @@
                         <i class="fa-solid fa-arrow-right color-brand-light"></i>
                     </div>
                     <h4 class="mt-20">Middle Marketing</h4>
-                    <p class="mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
 
                 <div class="services-card mt-20">
@@ -55,7 +55,7 @@
                         <i class="fa-solid fa-arrow-right color-brand-light"></i>
                     </div>
                     <h4 class="mt-20">Legal Consulting</h4>
-                    <p class="mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
 
                 <div class="services-card mt-20">
@@ -64,7 +64,7 @@
                         <i class="fa-solid fa-arrow-right color-brand-light"></i>
                     </div>
                     <h4 class="mt-20">Regulatory Risk</h4>
-                    <p class="mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </div>

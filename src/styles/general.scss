@@ -8,6 +8,7 @@ html {
 }
 body {
     font-family: Verdana, sans-serif;
+    color: $black-var;
 }
 
 section {
@@ -23,7 +24,6 @@ ul {
     list-style: none;
 }
 a {
-    color: black;
     &:link {text-decoration: none};
     &:visited {text-decoration: none};
     &:active {text-decoration: none};
@@ -34,12 +34,22 @@ a {
 
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .container-fluid {
     max-width: 100%;
     width: 100%;
+}
+.container-small {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container-large {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
