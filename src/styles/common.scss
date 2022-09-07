@@ -26,6 +26,9 @@
 .mt-40 {
     margin-top: 40px;
 }
+.ml-10 {
+    margin-left: 10px;
+}
 .ml-20 {
     margin-left: 20px;
 }
@@ -98,6 +101,10 @@ h2 {
     padding: 10px 20px;
     background-color: $brand-color-dark;
     color: $white;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 .btn-sec {
     display: inline-block;
@@ -105,6 +112,10 @@ h2 {
     border: 2px solid $brand-color-dark;
     border-radius: 5px;
     padding: 10px 20px;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
 }
 
 
@@ -130,4 +141,11 @@ h2 {
     text-align: center;
     font-weight: bold;
     line-height: 30px;
+}
+
+
+
+.active {
+    background-color: rgba(4, 131, 131, 0.1);
+    box-shadow: inset 0px -5px 0px 0px $brand-color-dark;
 }

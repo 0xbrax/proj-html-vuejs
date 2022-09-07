@@ -9,80 +9,20 @@
                 </div>
 
                 <div class="flex wrap just-sp-bw">
-                    <div class="team-card flex align-ctr mt-40">
-                        <img src="@/assets/img/team-1.jpg" alt="David Cooper">
+                    <div class="team-card flex align-ctr mt-40" v-for="(team, teamIndex) in teamCard" :key="teamIndex">
+                        <img :src="require(`@/assets/img/${team.imgPath}`)" :alt="team.name">
 
                         <div class="ml-20">
-                            <h3>David Cooper</h3>
-                            <div class="color-grey txt-up mt-20">CTO &amp; co-founder</div>
+                            <h3>{{team.name}}</h3>
+                            <div class="color-grey txt-up mt-20">{{team.title}}</div>
                             <div class="mt-20">
-                                <a class="circle-back-alt" href="#">
+                                <a class="circle-back-alt" :href="team.facebook">
                                     <i class="fa-brands fa-facebook-f"></i>
                                 </a>
-                                <a class="circle-back-alt ml-20" href="#">
+                                <a class="circle-back-alt ml-20" :href="team.twitter">
                                     <i class="fa-brands fa-twitter"></i>
                                 </a>
-                                <a class="circle-back-alt ml-20" href="#">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="team-card flex align-ctr mt-40">
-                        <img src="@/assets/img/team-3.jpg" alt="Oliver Jones">
-
-                        <div class="ml-20">
-                            <h3>Oliver Jones</h3>
-                            <div class="color-grey txt-up mt-20">Chief procurement</div>
-                            <div class="mt-20">
-                                <a class="circle-back-alt" href="#">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                                <a class="circle-back-alt ml-20" href="#">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                                <a class="circle-back-alt ml-20" href="#">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="team-card flex align-ctr mt-40">
-                        <img src="@/assets/img/team-2.jpg" alt="emma Lopez">
-
-                        <div class="ml-20">
-                            <h3>Emma Lopez</h3>
-                            <div class="color-grey txt-up mt-20">Chief marketing</div>
-                            <div class="mt-20">
-                                <a class="circle-back-alt" href="#">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                                <a class="circle-back-alt ml-20" href="#">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                                <a class="circle-back-alt ml-20" href="#">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="team-card flex align-ctr mt-40">
-                        <img src="@/assets/img/team-4.jpg" alt="T. Johnson">
-
-                        <div class="ml-20">
-                            <h3>T. Johnson</h3>
-                            <div class="color-grey txt-up mt-20">CEO &amp; president</div>
-                            <div class="mt-20">
-                                <a class="circle-back-alt" href="#">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                                <a class="circle-back-alt ml-20" href="#">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                                <a class="circle-back-alt ml-20" href="#">
+                                <a class="circle-back-alt ml-20" :href="team.linkedin">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                             </div>
@@ -107,7 +47,45 @@
 
 <script>
 export default {
-    name: 'MySectionTeam'
+    name: 'MySectionTeam',
+    data() {
+        return {
+            teamCard: [
+                {
+                    name: 'David Cooper',
+                    title: 'CTO & co-founder',
+                    imgPath: 'team-1.jpg',
+                    facebook: '#',
+                    twitter: '#',
+                    linkedin: '#'
+                },
+                {
+                    name: 'Oliver Jones',
+                    title: 'Chief procurement',
+                    imgPath: 'team-3.jpg',
+                    facebook: '#',
+                    twitter: '#',
+                    linkedin: '#'
+                },
+                {
+                    name: 'Emma Lopez',
+                    title: 'Chief marketing',
+                    imgPath: 'team-2.jpg',
+                    facebook: '#',
+                    twitter: '#',
+                    linkedin: '#'
+                },
+                {
+                    name: 'T. Johnson',
+                    title: 'CEO & president',
+                    imgPath: 'team-4.jpg',
+                    facebook: '#',
+                    twitter: '#',
+                    linkedin: '#'
+                }
+            ],
+        }
+    }
 }
 </script>
 

@@ -13,58 +13,13 @@
             </div>
 
             <div class="flex wrap just-sp-bw mt-20">
-                <div class="services-card mt-20">
+                <div class="services-card mt-20" v-for="(services, servicesIndex) in servicesCard" :key="servicesIndex">
                     <div class="flex just-sp-bw">
-                        <i class="fa-solid fa-network-wired color-brand-dark font-s30"></i>
+                        <i class="color-brand-dark font-s30" :class="services.icon"></i>
                         <i class="fa-solid fa-arrow-right color-brand-light"></i>
                     </div>
-                    <h4 class="mt-20">Audit &amp; Assurance</h4>
-                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="services-card mt-20">
-                    <div class="flex just-sp-bw">
-                        <i class="fa-solid fa-briefcase color-brand-dark font-s30"></i>
-                        <i class="fa-solid fa-arrow-right color-brand-light"></i>
-                    </div>
-                    <h4 class="mt-20">Financial Advisory</h4>
-                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="services-card mt-20">
-                    <div class="flex just-sp-bw">
-                        <i class="fa-solid fa-chart-simple color-brand-dark font-s30"></i>
-                        <i class="fa-solid fa-arrow-right color-brand-light"></i>
-                    </div>
-                    <h4 class="mt-20">Analytics and M&amp;A</h4>
-                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="services-card mt-20">
-                    <div class="flex just-sp-bw">
-                        <i class="fa-solid fa-plane fa-rotate-by color-brand-dark font-s30" style="--fa-rotate-angle: 315deg;"></i>
-                        <i class="fa-solid fa-arrow-right color-brand-light"></i>
-                    </div>
-                    <h4 class="mt-20">Middle Marketing</h4>
-                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="services-card mt-20">
-                    <div class="flex just-sp-bw">
-                        <i class="fa-solid fa-magnifying-glass color-brand-dark font-s30"></i>
-                        <i class="fa-solid fa-arrow-right color-brand-light"></i>
-                    </div>
-                    <h4 class="mt-20">Legal Consulting</h4>
-                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="services-card mt-20">
-                    <div class="flex just-sp-bw">
-                        <i class="fa-solid fa-box color-brand-dark font-s30"></i>
-                        <i class="fa-solid fa-arrow-right color-brand-light"></i>
-                    </div>
-                    <h4 class="mt-20">Regulatory Risk</h4>
-                    <p class="color-grey mt-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <h4 class="mt-20">{{services.name}}</h4>
+                    <p class="color-grey mt-20">{{services.overview}}</p>
                 </div>
             </div>
         </div>
@@ -73,7 +28,43 @@
 
 <script>
 export default {
-    name: 'MySectionServices'
+    name: 'MySectionServices',
+    data() {
+        return {
+            servicesCard: [
+                {
+                    icon: 'fa-solid fa-network-wired',
+                    name: 'Audit & Assurance',
+                    overview: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+                },
+                {
+                    icon: 'fa-solid fa-briefcase',
+                    name: 'Financial Advisory',
+                    overview: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+                },
+                {
+                    icon: 'fa-solid fa-chart-simple',
+                    name: 'Analytics and M&A',
+                    overview: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+                },
+                {
+                    icon: 'fa-solid fa-plane',
+                    name: 'Middle Marketing',
+                    overview: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+                },
+                {
+                    icon: 'fa-solid fa-magnifying-glass',
+                    name: 'Legal Consulting',
+                    overview: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+                },
+                {
+                    icon: 'fa-solid fa-box',
+                    name: 'Regulatory Risk',
+                    overview: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+                }
+            ],
+        }
+    }
 }
 </script>
 

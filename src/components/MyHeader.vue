@@ -28,18 +28,21 @@
         </div>
 
         <nav>
-            <div class="container flex align-ctr txt-up">
+            <div class="container flex just-sp-bw align-ctr txt-up">
                 <div class="logo-main">
                     <div class="logo-txt">
                         <a class="txt-space txt-bold" href="#"><span class="color-brand-dark">Nex</span><span class="color-black">gen</span></a>
                     </div>
                 </div>
 
-                <div class="menu-main txt-r">
-                    <ul>
-                        <li v-for="(link, linkIndex) in headerLink" :key="linkIndex" class="ml-20"><a class="color-black" :href="link.url">{{link.name}}</a></li>
-                        <li class="ml-20"><a class="btn-main" href="#contact-id">Get in touch</a></li>
-                    </ul>
+                <div class="menu-main flex just-end align-ctr">
+                    <div class="menu-list flex">
+                        <a v-for="(link, linkIndex) in headerLink" :key="linkIndex" class="color-black" :class="linkIndex == whoIsSelected ? 'active' : ''"
+                        :href="link.url" @click="setLinkActive(linkIndex)">
+                            {{link.name}}
+                        </a>
+                    </div>
+                    <a class="btn-main ml-10" href="#contact-id">Get in touch</a>
                 </div>
             </div>
         </nav>
@@ -79,7 +82,13 @@ export default {
                     url: '#blog-id',
                     name: 'Blog'
                 }
-            ]
+            ],
+            whoIsSelected: 0
+        }
+    },
+    methods: {
+        setLinkActive(index) {
+            this.whoIsSelected = index;
         }
     }
 }
@@ -126,14 +135,26 @@ export default {
     }
 
     .logo-main {
-        width: 30%;
+        width: 20%;
     }
 
     .menu-main {
-        width: 70%;
+        width: 80%;
+        height: 100%;
 
-        li {
-            display: inline-block;
+        .menu-list {
+            height: 100%;
+
+            a {
+                line-height: 70px;
+                height: 100%;
+                padding: 0 10px;
+
+                &:hover {
+                    background-color: rgba(4, 131, 131, 0.1);
+                    box-shadow: inset 0px -5px 0px 0px $brand-color-dark;
+                }
+            }
         }
     }
 </style>

@@ -7,22 +7,11 @@
                 <p class="color-grey mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium laborum, mollitia ullam, explicabo recusandae commodi iste id expedita aut sequi necessitatibus, adipisci tenetur porro ea consectetur? Veniam, neque earum.</p>
                 <p class="color-grey mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quidem expedita nisi cumque fugit corporis molestias qui minus, excepturi iusto!</p>
             </div>
+
             <div class="flex wrap just-sp-bw">
-                <div class="about-card">
-                    <div><i class="fa-solid fa-award color-brand-dark"></i> Tradition</div>
-                    <p class="color-grey mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, omnis.</p>
-                </div>
-                <div class="about-card">
-                    <div><i class="fa-solid fa-lock color-brand-dark"></i> Security</div>
-                    <p class="color-grey mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, omnis.</p>
-                </div>
-                <div class="about-card mt-40">
-                    <div><i class="fa-solid fa-pen-to-square color-brand-dark"></i> Certificate</div>
-                    <p class="color-grey mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, omnis.</p>
-                </div>
-                <div class="about-card mt-40">
-                    <div><i class="fa-solid fa-graduation-cap color-brand-dark"></i> Expertise</div>
-                    <p class="color-grey mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, omnis.</p>
+                <div class="about-card mt-40" v-for="(about, aboutIndex) in aboutCard" :key="aboutIndex">
+                    <div><i class="color-brand-dark" :class="about.icon"></i> {{about.name}}</div>
+                    <p class="color-grey mt-20">{{about.overview}}</p>
                 </div>
             </div>
         </div>
@@ -31,7 +20,33 @@
 
 <script>
 export default {
-    name: 'MySectionAbout'
+    name: 'MySectionAbout',
+    data() {
+        return {
+            aboutCard: [
+                {
+                    icon: 'fa-solid fa-award',
+                    name: 'Tradition',
+                    overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, omnis.'
+                },
+                {
+                    icon: 'fa-solid fa-lock',
+                    name: 'Security',
+                    overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, omnis.'
+                },
+                {
+                    icon: 'fa-solid fa-pen-to-square',
+                    name: 'Certificate',
+                    overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, omnis.'
+                },
+                {
+                    icon: 'fa-solid fa-graduation-cap',
+                    name: 'Expertise',
+                    overview: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, omnis.'
+                }
+            ],
+        }
+    }
 }
 </script>
 

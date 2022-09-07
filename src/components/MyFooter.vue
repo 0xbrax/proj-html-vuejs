@@ -21,6 +21,10 @@
                         </div>
                     </div>
                 </div>
+
+                <a v-if="checkGoTop == true" class="go-to-top font-s30" href="#">
+                    <i class="fa-solid fa-caret-up"></i>
+                </a>
             </div>
         </div>
 
@@ -30,7 +34,7 @@
                 Enjoy the low price. We are tracking any intention of piracy.
             </div>
             <div class="credits txt-r">
-                &copy; <span class="txt-up">Nexgen</span> is Proudly Powered by <a href="#" class="color-brand-dark">Codings</a>.
+                &copy; <span class="txt-up">Nexgen</span> is Proudly Powered by <a href="#">Codings</a>.
             </div>
         </div>
         </div>
@@ -40,6 +44,9 @@
 <script>
 export default {
     name: 'MyFooter',
+    props: {
+        checkGoTop: Boolean
+    },
     data() {
         return {
             infoCard: [
@@ -145,6 +152,10 @@ export default {
 
     .bottombar {
         background-color: $black-var;
+
+        .container {
+            position: relative;
+        }
     }
 
     .info-card {
@@ -172,5 +183,29 @@ export default {
 
     .credits {
         width: 50%;
+
+        a {
+            color: $brand-color-dark;
+        }
+    }
+
+    .go-to-top {
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $brand-color-dark;
+        color: $blue-aqua-light;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 60px;
+
+        position: absolute;
+        top: -90px;
+        right: 30px;
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 </style>
